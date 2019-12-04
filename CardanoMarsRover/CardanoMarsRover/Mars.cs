@@ -18,6 +18,7 @@ namespace CardanoMarsRover
         public void PlaceRover(MarsRover rover)
         {
             MarsRovers.Add(rover);
+            PlaceObject(rover.Location);
         }
     }
 }

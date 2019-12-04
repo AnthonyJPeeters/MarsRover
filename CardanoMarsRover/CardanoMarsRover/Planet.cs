@@ -17,7 +17,7 @@ namespace CardanoMarsMission
         /// </summary>
         /// <param name="xSize">Will be representing the X-as</param>
         /// <param name="ySize">Will be representing the Y-as</param>
-        /// NOTE: if I had more time, I would NOT make this an 2D array of booleans but
+        /// NOTE: if I had more time, I would not make this an 2D array of booleans but
         /// a 2D array of a List<IObject> (named accordingly). This list would contain all objects,
         /// properties etc. of this tile. 
         public Planet(int xSize, int ySize)

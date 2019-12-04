@@ -8,29 +8,39 @@ namespace CardanoMarsMission
     public static class InputHelper
     {
         /// <summary>
-        /// Gets all the moving possibilites for a Mars rover. The reason I did it like this is 
+        /// Gets all the moving possibilites for a Mars rover. I did it like this is 
         /// because the way it moves might change any given time. Lets say in the future we get this data from a database,
         /// if a wheel breaks, it might not be able to move forward but might still move left or right. Also if this is the case,
         /// this should become a property of the Mars rover itself. For now its just in the helper class.
         /// </summary>
         /// <returns>A list which returns all the positions the Mars rover can move in</returns>
-        private static List<string> MovePosibillities()
+        private static List<string> MovePossibilities()
         {
-            Array underlayingTypes = Enum.GetValues(typeof(Move));
             List<string> moveValues = new List<string>();
-            for (int i = 0; i < underlayingTypes.Length; i++)
+
+            foreach (Move item in Enum.GetValues(typeof(Move)))
             {
-                moveValues.Add(Convert.ToString(underlayingTypes.GetValue(i)).ToLower());
+                moveValues.Add(item.ToMoveString());
             }
+
             return moveValues;
         }
 
-        public static Boolean IsValidMove(this string move)
+        public static string ToMoveString(this Move move)
         {
+            return ((char)move).ToString().ToLower();
+        }
 
+        public static bool IsValidMoveInput(string move)
+        {
+            List<string> movePossibilities = MovePossibilities();
+            
+            if (movePossibilities.Contains(move.ToLower()))
+            {
+                return true;
+            }
 
-
-            return true;
+            return false;
         }
     }
 }

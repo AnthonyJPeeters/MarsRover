@@ -8,8 +8,10 @@ namespace CardanoMarsRover
     {
         public void MoveRover(MarsRoverContext context)
         {
-            Console.WriteLine("The Mars rover moved into a ditch...");
-            context.SetState(new ErrorState());
+            Console.WriteLine("The Mars rover moved into an obstacle...");
+            // TODO: Check if the mars rover is out of boundries after the next move, if so, change to error state
+
+            context.SetState(new StuckState());
         }
     }
 }

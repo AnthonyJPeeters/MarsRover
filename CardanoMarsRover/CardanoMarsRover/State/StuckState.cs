@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CardanoMarsRover
 {
-    public class ErrorState : IState
+    public class StuckState : IState
     {
         public void MoveRover(MarsRoverContext context)
         {

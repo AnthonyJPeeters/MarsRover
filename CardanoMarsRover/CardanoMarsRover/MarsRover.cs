@@ -38,7 +38,7 @@ namespace CardanoMarsRover
         }
     }
 
-    public enum CardinalDirection
+    public enum CardinalDirection 
     {
         North = 'N',
         East = 'E',
