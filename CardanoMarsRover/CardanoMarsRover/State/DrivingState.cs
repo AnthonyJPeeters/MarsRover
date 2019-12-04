@@ -6,9 +6,11 @@ namespace CardanoMarsRover
 {
     public class DrivingState : IState
     {
-        public void MoveRover(StateContext context, string name)
+        public void MoveRover(MarsRoverContext context, string name)
         {
             throw new NotImplementedException();
+
+
         }
     }
 }

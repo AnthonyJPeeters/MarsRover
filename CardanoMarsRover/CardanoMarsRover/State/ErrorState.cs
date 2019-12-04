@@ -6,10 +6,9 @@ namespace CardanoMarsRover
 {
     public class ErrorState : IState
     {
-        public void MoveRover(StateContext context, string name)
+        public void MoveRover(MarsRoverContext context, string name)
         {
             Console.WriteLine(name.ToLower());
-            context.SetState(new DrivingState());
         }
     }
 }

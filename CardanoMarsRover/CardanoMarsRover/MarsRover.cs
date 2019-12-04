@@ -7,7 +7,6 @@ namespace CardanoMarsRover
 {
     public class MarsRover : IRemoteVehicle
     {
-        private StateContext RoverContext;
         public int AmountOfWheels { get; }
 
         /// <summary>
@@ -25,7 +24,6 @@ namespace CardanoMarsRover
             AmountOfWheels = 6;
             FacingDirection = facingDirection;
             Location = startLocation;
-            RoverContext = new StateContext();
         }
 
         /// <summary>

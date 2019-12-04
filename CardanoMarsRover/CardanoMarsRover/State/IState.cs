@@ -6,6 +6,6 @@ namespace CardanoMarsRover
 {
     public interface IState
     {
-        void MoveRover(StateContext context, String name);
+        void MoveRover(MarsRoverContext context, String name);
     }
 }

@@ -1,15 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace CardanoMarsRover
 {
-    public class StateContext
+    public class MarsRoverContext
     {
         private IState state;
-        public StateContext()
+        private MarsRover MarsRover;
+        public MarsRoverContext(MarsRover marsRover)
+        {
+            MarsRover = marsRover;
+        }
+        public MarsRoverContext(CardinalDirection marsRoverDirection, Point startLocation)
         {
             state = new DrivingState();
+            MarsRover = new MarsRover(marsRoverDirection, startLocation);
         }
 
         public void SetState(IState newState)
