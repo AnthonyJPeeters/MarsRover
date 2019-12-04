@@ -36,7 +36,6 @@ namespace CardanoMarsRover
             FacingDirection = facingDirection;
             return facingDirection;
         }
-
     }
 
     public enum CardinalDirection
@@ -45,5 +44,13 @@ namespace CardanoMarsRover
         East = 'E',
         South = 'S',
         West = 'W'
+    }
+
+    public enum Move
+    {
+        Left = 'L',
+        Right = 'R',
+        Move = 'M',
+        None = 'N'
     }
 }

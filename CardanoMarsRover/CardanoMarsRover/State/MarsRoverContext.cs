@@ -25,9 +25,9 @@ namespace CardanoMarsRover
             state = newState;
         }
 
-        public void MoveRover(String name)
+        public void MoveRover()
         {
-            state.MoveRover(this, name);
+            state.MoveRover(this);
         }
     }
 }

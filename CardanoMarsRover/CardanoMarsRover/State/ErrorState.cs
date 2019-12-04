@@ -6,7 +6,7 @@ namespace CardanoMarsRover
 {
     public class ErrorState : IState
     {
-        public void MoveRover(MarsRoverContext context, string name)
+        public void MoveRover(MarsRoverContext context)
         {
             Console.WriteLine("The Mars rover is stuck. Please contact a mechanic.");
         }
