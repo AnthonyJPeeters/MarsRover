@@ -11,6 +11,7 @@ namespace CardanoMarsRover
         private MarsRover MarsRover;
         public MarsRoverContext(MarsRover marsRover)
         {
+            state = new DrivingState();
             MarsRover = marsRover;
         }
         public MarsRoverContext(CardinalDirection marsRoverDirection, Point startLocation)

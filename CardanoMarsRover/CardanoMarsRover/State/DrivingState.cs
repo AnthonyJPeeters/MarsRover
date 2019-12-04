@@ -8,9 +8,8 @@ namespace CardanoMarsRover
     {
         public void MoveRover(MarsRoverContext context, string name)
         {
-            throw new NotImplementedException();
-
-
+            Console.WriteLine("The Mars rover moved into a ditch...");
+            context.SetState(new ErrorState());
         }
     }
 }

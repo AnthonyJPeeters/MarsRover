@@ -9,3 +9,14 @@ C:\Users\Anthony Peeters\source\repos\CardanoMarsRover\CardanoMarsRover\obj\Debu
 C:\Users\Anthony Peeters\source\repos\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.AssemblyInfo.cs
 C:\Users\Anthony Peeters\source\repos\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.dll
 C:\Users\Anthony Peeters\source\repos\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.pdb
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\bin\Debug\netcoreapp3.0\CardanoMarsMission.exe
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\bin\Debug\netcoreapp3.0\CardanoMarsMission.deps.json
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\bin\Debug\netcoreapp3.0\CardanoMarsMission.runtimeconfig.json
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\bin\Debug\netcoreapp3.0\CardanoMarsMission.runtimeconfig.dev.json
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\bin\Debug\netcoreapp3.0\CardanoMarsMission.dll
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\bin\Debug\netcoreapp3.0\CardanoMarsMission.pdb
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.csprojAssemblyReference.cache
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.AssemblyInfoInputs.cache
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.AssemblyInfo.cs
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.dll
+C:\Users\Anthony Peeters\source\repos\MarsRover\CardanoMarsRover\CardanoMarsRover\obj\Debug\netcoreapp3.0\CardanoMarsMission.pdb

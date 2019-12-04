@@ -8,7 +8,7 @@ namespace CardanoMarsRover
     {
         public void MoveRover(MarsRoverContext context, string name)
         {
-            Console.WriteLine(name.ToLower());
+            Console.WriteLine("The Mars rover is stuck. Please contact a mechanic.");
         }
     }
 }
