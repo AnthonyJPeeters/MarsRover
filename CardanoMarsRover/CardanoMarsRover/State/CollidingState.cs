@@ -7,7 +7,7 @@ namespace CardanoMarsMission.State
 {
     public class CollidingState : IState
     {
-        public void MoveRover(MarsRoverContext context)
+        public void MoveRover(MarsRoverContext context, Planet planet)
         {
             Console.WriteLine("This movement is not possible due collision");
             // Don't move the Mars rover but instead move the state back

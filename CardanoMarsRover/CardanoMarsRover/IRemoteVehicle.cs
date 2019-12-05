@@ -10,5 +10,10 @@ namespace CardanoMarsRover
         {
             get;
         }
+        public Guid VehicleGuid
+        {
+            get;
+        }
+        
     }
 }

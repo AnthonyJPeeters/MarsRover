@@ -36,5 +36,10 @@ namespace CardanoMarsMission
         {
             Size[point.X, point.Y] = true;
         }
+
+        public void RemoveObject(Point point)
+        {
+            Size[point.X, point.Y] = false;
+        }
     }
 }

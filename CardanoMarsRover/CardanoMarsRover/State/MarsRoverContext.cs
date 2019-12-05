@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CardanoMarsMission;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -8,7 +9,7 @@ namespace CardanoMarsRover
     public class MarsRoverContext
     {
         private IState state;
-        private MarsRover MarsRover;
+        public MarsRover MarsRover { get; }
         public MarsRoverContext(MarsRover marsRover)
         {
             state = new DrivingState();
@@ -25,9 +26,18 @@ namespace CardanoMarsRover
             state = newState;
         }
 
-        public void MoveRover()
+        public void MoveRover(Move move, Planet planet)
         {
-            state.MoveRover(this);
+            if (move != Move.Move)
+            {
+                // Get the next direction the Rover is facing
+                MarsRover.ChangeFacingDirection(MarsRoverHelper.GetCardinalDirection(MarsRover, move));
+            }
+            else
+            {
+                // Move the actual mars rover on the planet
+                state.MoveRover(this, planet);
+            }
         }
     }
 }

@@ -18,9 +18,10 @@ namespace CardanoMarsRover
         /// Current location of the Mars rover
         /// </summary>
         public Point Location { get; private set; }
-
+        public Guid VehicleGuid { get;  }
         public MarsRover(CardinalDirection facingDirection, Point startLocation)
         {
+            VehicleGuid = Guid.NewGuid();
             AmountOfWheels = 6;
             FacingDirection = facingDirection;
             Location = startLocation;
@@ -35,6 +36,41 @@ namespace CardanoMarsRover
         {
             FacingDirection = facingDirection;
             return facingDirection;
+        }
+
+        /// <summary>
+        /// Sets the new location of the mars rover
+        /// </summary>
+        /// <param name="point">the new location of the mars rover</param>
+        public void SetNewLocation(Point point)
+        {
+            Location = point;
+        }
+
+        /// <summary>
+        /// Compares mars rovers of the context. 
+        /// </summary>
+        /// <param name="obj">The Mars rover to compare it to</param>
+        /// <returns>True when the VehicleGuid's match</returns>
+        public override bool Equals(object obj)
+        {
+            if (obj.GetType() != typeof(MarsRover))
+            {
+                return false;
+            }
+            MarsRover marsRover = (MarsRover)obj;
+
+            if (marsRover.VehicleGuid.Equals(this.VehicleGuid))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return this.VehicleGuid.GetHashCode();
         }
     }
 
