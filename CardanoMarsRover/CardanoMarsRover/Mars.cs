@@ -1,6 +1,7 @@
 ﻿using CardanoMarsMission;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace CardanoMarsRover
@@ -35,6 +36,18 @@ namespace CardanoMarsRover
             }
 
             marsRoverResult.MoveRover(marsRoverMove, this);
+        }
+
+        public bool IsPointInGrid(Point point)
+        {
+            int planetXAxis = Size.GetLength(0);
+            int planetYAxis = Size.GetLength(1);
+
+            if (point.Y >= planetYAxis || point.X >= planetXAxis || point.Y < 0 || point.X < 0)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

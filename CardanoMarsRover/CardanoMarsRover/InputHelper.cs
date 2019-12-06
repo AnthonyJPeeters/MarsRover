@@ -2,11 +2,22 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace CardanoMarsMission
 {
     public static class InputHelper
     {
+        public static string GetTwoNumberSeperatorRegex()
+        {
+            return @"^\d+(?:\s+\d+){1}$";
+        }
+
+        public static bool IsValidStringForRegex(string regex, string input)
+        {
+            return Regex.Match(input, regex, RegexOptions.IgnoreCase).Success;
+        }
+
         /// <summary>
         /// Gets all the moving possibilites for a Mars rover. I did it like this is 
         /// because the way it moves might change any given time. Lets say in the future we get this data from a database,
@@ -97,6 +108,22 @@ namespace CardanoMarsMission
                     return CardanoMarsRover.CardinalDirection.West;
                 default:
                     throw new Exception("Cardinal direction not found");
+            }
+        }
+
+        public static Move GetMove(string move)
+        {
+            string convertedMove = move.ToUpper();
+            switch (convertedMove)
+            {
+                case "L":
+                    return Move.Left;
+                case "R":
+                    return Move.Right;
+                case "M":
+                    return Move.Move;
+                default:
+                    return Move.None;
             }
         }
     }
